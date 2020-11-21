@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <title>UTS</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="shortcut icon" href="assets/image/fav.ico">
+</head>
+<body>
+
+  <div class="container">
+
+     <!--Header-->
+     <div class="header">
+      <h1 class="title">Bukataplak</h1>
+      
+        <button class="tabLink" onclick="openPage('home', this, '#fff')">Home</button>
+
+        <button class="tabLink" onclick="openPage('about', this, '#fff')" >About</button>
+
+        <button class="tabLink" onclick="openPage('product', this, '#fff')">Product</button>
+
+        <button class="tabLink" onclick="openPage('service', this, '#fff')">Service</button>
+
+        <button class="tabLink" onclick="openPage('contact', this, '#fff')">Contact</button>
+      
+    </div>
+
+    <!--Banner-->
+    <div class="banner"></div>
+
+    <!--Content-->
+    <div class="content" id="home">
+      <h2>Home</h2>
+      <p class="author">Author <a href="https://github.com/dikako" target="_blank" rel="noopener noreferrer">Dika Koko</a> On 04 November 2020</p>
+  
+      <p>Selamat Datang di <b>Bukataplak</b> :D</p>
+    </div>
+
+    <div class="content" id="about">
+      <h2>About</h2>
+      <p class="author">Author <a href="https://github.com/dikako" target="_blank" rel="noopener noreferrer">Dika Koko</a> On 04 November 2020</p>
+  
+      <p>Buka Taplak Adalah Sebuah Web Iseng Iseng yang dibuat untuk memenuhi tugas UTS</p>
+    </div>
+
+    <div class="content" id="product">
+      <h2>Product</h2>
+      <p class="author">Author <a href="https://github.com/dikako" target="_blank" rel="noopener noreferrer">Dika Koko</a> On 04 November 2020</p>
+  
+      <p>Buka Taplak Menyediakan Macam macam jenis taplak, baik yang kw sampai yang original</p>
+    </div>
+
+    <div class="content" id="service">
+      <h2>Sevices</h2>
+      <p class="author">Author <a href="https://github.com/dikako" target="_blank" rel="noopener noreferrer">Dika Koko</a> On 04 November 2020</p>
+  
+      <p>Buka Taplak Memiliki Service Jahit dan service taplak</p>
+    </div>
+
+    <div class="content" id="contact">
+      <h2>Contact</h2>
+      <p class="author">Author <a href="https://github.com/dikako" target="_blank" rel="noopener noreferrer">Dika Koko</a> On 04 November 2020</p>
+  
+      <p>Hubungi email kami bukataplak@gmail.com</p>
+    </div>
+
+    <div class="footer">
+      <p class="copyright">Copyright 2020. Fransiskus Andika Setiawan.</p>
+    </div>
+  </div>
+
+  <script>
+  function openPage(pageName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("content");
+
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    // Show the specific tab content
+    document.getElementById(pageName).style.display = "block";
+  
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+  }
+
+</script>
+</body>
+</html>

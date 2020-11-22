@@ -70,8 +70,6 @@
 
   <script>
   function openPage(pageName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
-
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("content");
 
@@ -80,7 +78,7 @@
     }
   
     // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
+    tablinks = document.getElementsByClassName("tabLink");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].style.backgroundColor = "";
     }

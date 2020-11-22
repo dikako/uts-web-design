@@ -140,6 +140,10 @@ body {
   padding: 10px;
 }
 
+b {
+  font-weight: bold;
+}
+
 #home {
   background-color: #fff;
 }
